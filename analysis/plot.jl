@@ -12,7 +12,7 @@ actual2[!,:gain] = dB.(actual2[!,:s12r], actual2[!,:s12c])
 
 p = plot(log10.(ref[!,:frequency]./1e6), ref[!,:gain], label="Simulated")
 plot!(p, log10.(actual2[!,:f]./1e6), actual2[!,:gain] .- dB(2), label="Two layer")
-plot!(p, log10.(actual4[!,:f]./1e6), actual4[!,:gain] .- dB(2), label="Two layer")
+plot!(p, log10.(actual4[!,:f]./1e6), actual4[!,:gain] .- dB(2), label="Four layer")
 
 fx = vec([i*10^j for i in [1,2,5], j in 0:8])
 ticks = (log10.(fx./1e6), string.(Int.(round.(fx ./ 1e6))))
