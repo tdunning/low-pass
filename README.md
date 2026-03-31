@@ -28,3 +28,10 @@ The primary design here is a 4-layer board in order to minimize the
 distance from the signal-carrying traces to the closest ground
 plane. The design works nearly as well with a 2-layer board, but there
 is noticeable degradation in performance as shown in the image above.
+
+# Licensing
+
+This project is licensed under the MIT license with the idea that the 
+circuit designs and layouts are simply a form of software.
+
+Please share and enjoy if you build something cool based on this work.
